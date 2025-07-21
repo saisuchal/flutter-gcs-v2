@@ -16,13 +16,16 @@ dependencies:
   cupertino_icons: ^1.0.6
 
   # USB serial port support (for SiK via OTG)
-  flutter_serial: ^0.0.3
+  flutter_serial_communication: ^0.2.8
 
   # State management
   flutter_riverpod: ^2.5.1
 
   # Google Maps for drone tracking
   google_maps_flutter: ^2.6.0
+
+  # Flutter Map for offline maps
+  flutter_map: ^6.1.0
 
   # LatLng utility
   latlong2: ^0.9.0
@@ -33,6 +36,11 @@ dependencies:
   # (Optional) Future MAVLink Dart FFI
   ffi: ^2.1.0
 
+  path_provider: ^2.1.2
+
+  usb_serial: ^0.3.0
+
 flutter: 
   assets:
     - assets/icons/
+  uses-material-design: true

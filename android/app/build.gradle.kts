@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "com.example.flutter_gcs"
-    compileSdk = flutter.compileSdkVersion
+    compileSdk = 35  // ✅ Hardcoded instead of flutter.compileSdkVersion
     ndkVersion = "27.0.12077973"
 
     compileOptions {
@@ -24,8 +24,8 @@ android {
         applicationId = "com.example.flutter_gcs"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
-        minSdk = flutter.minSdkVersion
-        targetSdk = flutter.targetSdkVersion
+        minSdk = 21 // ✅ Minimum required by usb_serial..flutter.minSdkVersion
+        targetSdk = 35 // ✅ Required to avoid lStar error..flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
     }
